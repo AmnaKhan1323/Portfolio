@@ -14,24 +14,22 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
-  redux,
+  nextjs,
   tailwind,
   nodejs,
+  python,
   mongodb,
+  postgresql,
   git,
-  figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  aws,
+  ncratleos,
+  pathfinding,
+  wemeet,
+  nexusai,
+  syncboard,
+  sentinel,
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -44,6 +42,10 @@ export const navLinks: TNavLink[] = [
     title: "Work",
   },
   {
+    id: "achievements",
+    title: "Achievements",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -51,36 +53,24 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Web Developer",
+    title: "Full Stack Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend Engineer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Backend & API Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Cloud & DevOps",
     icon: creator,
   },
 ];
 
 const technologies: TTechnology[] = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
   {
     name: "TypeScript",
     icon: typescript,
@@ -90,184 +80,185 @@ const technologies: TTechnology[] = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "Next.js",
+    icon: nextjs,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "JavaScript",
+    icon: javascript,
   },
   {
     name: "Node JS",
     icon: nodejs,
   },
   {
+    name: "Python",
+    icon: python,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
+  },
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "AWS",
+    icon: aws,
   },
   {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
+    name: "Docker",
     icon: docker,
+  },
+  {
+    name: "Git",
+    icon: git,
   },
 ];
 
 const experiences: TExperience[] = [
   {
-    title: "React.js Developer",
-    companyName: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Software Engineer Intern",
+    companyName: "NCR Atleos",
+    icon: ncratleos,
+    iconBg: "#FFFFFF",
+    date: "Feb 2024 - Sep 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed Titan Dashboard, reducing manual finance batch tracking effort by 80%.",
+      "Designed real-time monitoring dashboard, improving batch movement visibility by 50%.",
+      "Implemented data validation & approval processes, ensuring 99.5% accuracy.",
+      "Created ERP Wiki, consolidating Cloud, Treasury, Legacy Apps, Planning & Forecasting.",
     ],
   },
   {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Application Development Engineer-I",
+    companyName: "NCR Atleos",
+    icon: ncratleos,
+    iconBg: "#FFFFFF",
+    date: "Sep 2024 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Engineered and optimized Titan Dashboard & ERP Wiki, improving system performance by 40%.",
+      "Developed and maintained Oracle R12 apps on OCI & On-Prem, ensuring 99.9% uptime.",
+      "Led IAM integration for Titan and Trident, automating access control & security protocols.",
+      "Automated File Transfer System (FTS), enhancing data processing speed by 60%.",
+      "Managed dynamic database configurations for BOC applications, reducing deployment issues by 35%.",
+      "Spearheaded RevPro financial testing, ensuring 100% compliance with revenue standards.",
     ],
   },
 ];
 
-const testimonials: TTestimonial[] = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+const testimonials: TTestimonial[] = [];
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "NexusAI — Document Intelligence",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Full-stack AI platform with RAG architecture enabling natural language Q&A over enterprise documents. Built with Next.js frontend, Python/FastAPI backend, Ollama (Llama 3) for local LLM generation, ChromaDB for vector search, and PostgreSQL for metadata. Features document chunking pipeline, citation tracking, and 94% answer accuracy across 1,200+ document chunks. 100% free — no paid APIs.",
+    tags: [
+      {
+        name: "next.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "python-fastapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ollama-rag",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nexusai,
+    sourceCodeLink: "https://github.com/AmnaKhan1323/nexusai",
+  },
+  {
+    name: "SyncBoard — Collaborative Workspace",
+    description:
+      "Real-time collaborative project management SaaS with live cursors, Kanban boards, and team chat. Architected with Next.js 14, TypeScript, NextAuth (OAuth + JWT), Prisma ORM with PostgreSQL, Redis for pub/sub, and WebSocket server handling 50+ concurrent connections with <100ms sync latency. Deployed on AWS with CI/CD pipeline.",
+    tags: [
+      {
+        name: "next.js-typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "websocket-redis",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql-prisma",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: syncboard,
+    sourceCodeLink: "https://github.com/AmnaKhan1323/syncboard",
+  },
+  {
+    name: "Sentinel — Infrastructure Monitor",
+    description:
+      "Distributed cloud infrastructure monitoring platform tracking 26 microservices with real-time health checks, latency percentile dashboards (p50/p95/p99), and intelligent anomaly detection. Built with Node.js ingestion layer, Kafka for event streaming, TimescaleDB for time-series data, and Next.js dashboard. Processes 12.4k req/s with automated alerting via WebSocket.",
+    tags: [
+      {
+        name: "node.js-kafka",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "timescaledb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "aws-docker",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: sentinel,
+    sourceCodeLink: "https://github.com/AmnaKhan1323/sentinel",
+  },
+  {
+    name: "Pathfinding Visualizer",
+    description:
+      "Interactive algorithm visualization tool featuring Dijkstra's, A*, BFS, and DFS with real-time rendering. Engineered a responsive UI with dynamic grid manipulation, wall placement, and weighted nodes for optimal route planning.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "algorithms",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
+    image: pathfinding,
+    sourceCodeLink: "https://amnakhan1323.github.io/Pathfinding-Visualizer/",
   },
   {
-    name: "Job IT",
+    name: "We Meet — Video Conferencing",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Real-time video conferencing platform with WebRTC-powered HD video/audio streams, intelligent bandwidth management, and sub-200ms latency. Integrated Agora RTC for communication and RTM API for instant messaging.",
     tags: [
       {
-        name: "react",
+        name: "javascript",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "agora-webrtc",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "real-time",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    sourceCodeLink: "https://github.com/",
+    image: wemeet,
+    sourceCodeLink: "https://github.com/AmnaKhan1323/WeMeet",
   },
 ];
 

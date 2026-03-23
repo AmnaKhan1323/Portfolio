@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0118"/>
+      <stop offset="50%" style="stop-color:#1a0a3e"/>
+      <stop offset="100%" style="stop-color:#0d001a"/>
+    </linearGradient>
+    <linearGradient id="purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c3aed"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#34d399"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="shadow"><feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.4"/></filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)" rx="12"/>
+
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="800" height="48" fill="#110825" rx="12"/>
+  <rect x="0" y="20" width="800" height="28" fill="#110825"/>
+  <circle cx="24" cy="24" r="10" fill="url(#purple)" filter="url(#glow)"/>
+  <text x="42" y="29" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="white">NexusAI</text>
+  <text x="120" y="29" font-family="Arial, sans-serif" font-size="12" fill="#a78bfa">Document Intelligence Platform</text>
+
+  <!-- Status badges -->
+  <rect x="600" y="12" width="80" height="24" rx="12" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="1"/>
+  <text x="616" y="28" font-family="Arial, sans-serif" font-size="11" fill="#34d399">● Online</text>
+  <rect x="690" y="12" width="90" height="24" rx="12" fill="rgba(124,58,237,0.15)" stroke="#7c3aed" stroke-width="1"/>
+  <text x="700" y="28" font-family="Arial, sans-serif" font-size="11" fill="#a78bfa">⚡ GPT-4</text>
+
+  <!-- Left Panel - Chat -->
+  <rect x="20" y="62" width="360" height="420" rx="12" fill="#1a0e30" filter="url(#shadow)"/>
+  <text x="36" y="88" font-family="Arial, sans-serif" font-weight="600" font-size="14" fill="white">💬 AI Chat</text>
+
+  <!-- Chat Messages -->
+  <rect x="36" y="102" width="260" height="52" rx="10" fill="rgba(124,58,237,0.1)" stroke="#7c3aed" stroke-width="0.5"/>
+  <text x="48" y="122" font-family="Arial, sans-serif" font-size="11" fill="#d8b4fe">User</text>
+  <text x="48" y="140" font-family="Arial, sans-serif" font-size="12" fill="#e2e8f0">Summarize Q3 revenue trends</text>
+
+  <rect x="76" y="166" width="290" height="72" rx="10" fill="rgba(59,130,246,0.08)" stroke="#3b82f6" stroke-width="0.5"/>
+  <text x="88" y="186" font-family="Arial, sans-serif" font-size="11" fill="#93c5fd">NexusAI</text>
+  <text x="88" y="204" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1">Based on 47 documents analyzed:</text>
+  <text x="88" y="220" font-family="Arial, sans-serif" font-size="11" fill="#cbd5e1">Q3 revenue grew 23% YoY, driven by...</text>
+
+  <rect x="36" y="250" width="240" height="52" rx="10" fill="rgba(124,58,237,0.1)" stroke="#7c3aed" stroke-width="0.5"/>
+  <text x="48" y="270" font-family="Arial, sans-serif" font-size="11" fill="#d8b4fe">User</text>
+  <text x="48" y="288" font-family="Arial, sans-serif" font-size="12" fill="#e2e8f0">Show source citations</text>
+
+  <rect x="76" y="314" width="290" height="84" rx="10" fill="rgba(59,130,246,0.08)" stroke="#3b82f6" stroke-width="0.5"/>
+  <text x="88" y="334" font-family="Arial, sans-serif" font-size="11" fill="#93c5fd">NexusAI — 3 sources found</text>
+  <rect x="88" y="344" width="200" height="18" rx="4" fill="rgba(16,185,129,0.15)"/>
+  <text x="96" y="357" font-family="Arial, sans-serif" font-size="10" fill="#34d399">📄 Q3-Report.pdf — Page 12</text>
+  <rect x="88" y="366" width="180" height="18" rx="4" fill="rgba(16,185,129,0.15)"/>
+  <text x="96" y="379" font-family="Arial, sans-serif" font-size="10" fill="#34d399">📄 Finance-Summary.xlsx — Sheet 3</text>
+
+  <!-- Input bar -->
+  <rect x="36" y="440" width="328" height="32" rx="8" fill="#2a1a4a" stroke="#7c3aed" stroke-width="0.5"/>
+  <text x="48" y="460" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">Ask anything about your docs...</text>
+  <circle cx="348" cy="456" r="12" fill="url(#purple)"/>
+  <text x="343" y="461" font-family="Arial, sans-serif" font-size="14" fill="white">→</text>
+
+  <!-- Right Panel - RAG Pipeline -->
+  <rect x="400" y="62" width="380" height="200" rx="12" fill="#1a0e30" filter="url(#shadow)"/>
+  <text x="416" y="88" font-family="Arial, sans-serif" font-weight="600" font-size="14" fill="white">🔄 RAG Pipeline</text>
+
+  <!-- Pipeline nodes -->
+  <rect x="416" y="100" width="90" height="40" rx="8" fill="rgba(124,58,237,0.2)" stroke="#7c3aed" stroke-width="1"/>
+  <text x="434" y="116" font-family="Arial, sans-serif" font-weight="600" font-size="10" fill="#d8b4fe">Upload</text>
+  <text x="432" y="130" font-family="Arial, sans-serif" font-size="9" fill="#a78bfa">PDF / DOCX</text>
+
+  <text x="514" y="124" font-family="Arial, sans-serif" font-size="16" fill="#7c3aed">→</text>
+
+  <rect x="530" y="100" width="90" height="40" rx="8" fill="rgba(59,130,246,0.2)" stroke="#3b82f6" stroke-width="1"/>
+  <text x="545" y="116" font-family="Arial, sans-serif" font-weight="600" font-size="10" fill="#93c5fd">Chunk</text>
+  <text x="541" y="130" font-family="Arial, sans-serif" font-size="9" fill="#60a5fa">Embeddings</text>
+
+  <text x="628" y="124" font-family="Arial, sans-serif" font-size="16" fill="#3b82f6">→</text>
+
+  <rect x="645" y="100" width="110" height="40" rx="8" fill="rgba(16,185,129,0.2)" stroke="#10b981" stroke-width="1"/>
+  <text x="658" y="116" font-family="Arial, sans-serif" font-weight="600" font-size="10" fill="#6ee7b7">Vector DB</text>
+  <text x="660" y="130" font-family="Arial, sans-serif" font-size="9" fill="#34d399">Pinecone</text>
+
+  <!-- Metrics row -->
+  <rect x="416" y="155" width="100" height="44" rx="8" fill="rgba(255,255,255,0.03)"/>
+  <text x="436" y="174" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="white">47</text>
+  <text x="426" y="190" font-family="Arial, sans-serif" font-size="10" fill="#a78bfa">Docs Indexed</text>
+
+  <rect x="530" y="155" width="100" height="44" rx="8" fill="rgba(255,255,255,0.03)"/>
+  <text x="548" y="174" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="white">1.2k</text>
+  <text x="543" y="190" font-family="Arial, sans-serif" font-size="10" fill="#60a5fa">Chunks</text>
+
+  <rect x="645" y="155" width="110" height="44" rx="8" fill="rgba(255,255,255,0.03)"/>
+  <text x="670" y="174" font-family="Arial, sans-serif" font-weight="700" font-size="16" fill="white">94%</text>
+  <text x="660" y="190" font-family="Arial, sans-serif" font-size="10" fill="#34d399">Accuracy</text>
+
+  <!-- Bottom right - Architecture -->
+  <rect x="400" y="278" width="380" height="204" rx="12" fill="#1a0e30" filter="url(#shadow)"/>
+  <text x="416" y="304" font-family="Arial, sans-serif" font-weight="600" font-size="14" fill="white">🏗️ Architecture</text>
+
+  <!-- Tech stack pills -->
+  <rect x="416" y="316" width="64" height="24" rx="12" fill="rgba(124,58,237,0.2)" stroke="#7c3aed" stroke-width="0.8"/>
+  <text x="426" y="332" font-family="Arial, sans-serif" font-weight="600" font-size="10" fill="#d8b4fe">Next.js</text>
+
+  <rect x="488" y="316" width="70" height="24" rx="12" fill="rgba(234,179,8,0.15)" stroke="#eab308" stroke-width="0.8"/>
+  <text x="498" y="332" font-family="Arial, sans-serif" font-weight="600" font-size="10" fill="#fde047">Python</text>
+
+  <rect x="566" y="316" width="74" height="24" rx="12" fill="rgba(59,130,246,0.2)" stroke="#3b82f6" stroke-width="0.8"/>
+  <text x="576" y="332" font-family="Arial, sans-serif" font-weight="600" font-size="10" fill="#93c5fd">FastAPI</text>
+
+  <rect x="648" y="316" width="62" height="24" rx="12" fill="rgba(16,185,129,0.15)" stroke="#10b981" stroke-width="0.8"/>
+  <text x="658" y="332" font-family="Arial, sans-serif" font-weight="600" font-size="10" fill="#34d399">AWS</text>
+
+  <rect x="416" y="348" width="76" height="24" rx="12" fill="rgba(249,115,22,0.15)" stroke="#f97316" stroke-width="0.8"/>
+  <text x="424" y="364" font-family="Arial, sans-serif" font-weight="600" font-size="10" fill="#fb923c">OpenAI</text>
+
+  <rect x="500" y="348" width="78" height="24" rx="12" fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="0.8"/>
+  <text x="510" y="364" font-family="Arial, sans-serif" font-weight="600" font-size="10" fill="#22d3ee">Pinecone</text>
+
+  <rect x="586" y="348" width="90" height="24" rx="12" fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="0.8"/>
+  <text x="594" y="364" font-family="Arial, sans-serif" font-weight="600" font-size="10" fill="#a5b4fc">PostgreSQL</text>
+
+  <!-- Architecture diagram mini -->
+  <rect x="416" y="384" width="80" height="34" rx="6" fill="#2a1a4a" stroke="#7c3aed" stroke-width="0.5"/>
+  <text x="428" y="400" font-family="Arial, sans-serif" font-size="9" fill="#d8b4fe">Frontend</text>
+  <text x="430" y="412" font-family="Arial, sans-serif" font-size="8" fill="#a78bfa">Next.js</text>
+
+  <text x="503" y="404" font-family="Arial, sans-serif" font-size="12" fill="#7c3aed">⇄</text>
+
+  <rect x="520" y="384" width="80" height="34" rx="6" fill="#1a2a4a" stroke="#3b82f6" stroke-width="0.5"/>
+  <text x="536" y="400" font-family="Arial, sans-serif" font-size="9" fill="#93c5fd">API</text>
+  <text x="530" y="412" font-family="Arial, sans-serif" font-size="8" fill="#60a5fa">FastAPI</text>
+
+  <text x="607" y="404" font-family="Arial, sans-serif" font-size="12" fill="#3b82f6">⇄</text>
+
+  <rect x="624" y="384" width="80" height="34" rx="6" fill="#1a3a2a" stroke="#10b981" stroke-width="0.5"/>
+  <text x="644" y="400" font-family="Arial, sans-serif" font-size="9" fill="#6ee7b7">LLM</text>
+  <text x="636" y="412" font-family="Arial, sans-serif" font-size="8" fill="#34d399">GPT-4</text>
+
+  <!-- Connection lines to Vector DB -->
+  <rect x="520" y="428" width="80" height="34" rx="6" fill="#2a1a3a" stroke="#a855f7" stroke-width="0.5"/>
+  <text x="528" y="444" font-family="Arial, sans-serif" font-size="9" fill="#d8b4fe">Vector DB</text>
+  <text x="530" y="456" font-family="Arial, sans-serif" font-size="8" fill="#a78bfa">Pinecone</text>
+
+  <rect x="624" y="428" width="80" height="34" rx="6" fill="#1a1a3a" stroke="#6366f1" stroke-width="0.5"/>
+  <text x="640" y="444" font-family="Arial, sans-serif" font-size="9" fill="#a5b4fc">Store</text>
+  <text x="634" y="456" font-family="Arial, sans-serif" font-size="8" fill="#818cf8">PostgreSQL</text>
+</svg>

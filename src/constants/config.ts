@@ -40,13 +40,13 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Amna Khan — Portfolio",
+    fullName: "Amna Khan",
+    email: "amnakhan1323690@gmail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Amna Khan",
+    p: ["Full Stack Engineer | React · Node · Cloud · AI", "Building distributed systems & AI-powered platforms"],
   },
   contact: {
     p: "Get in touch",
@@ -67,11 +67,16 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I'm a Full Stack Engineer with ~2 years at NCR Atleos, where I
+      build and maintain enterprise apps for global financial operations — things
+      like real-time dashboards, automated file transfer systems, and ERP tooling.
+      Day-to-day I work with React, Next.js, Node.js, TypeScript, Python, and
+      cloud infrastructure (OCI, AWS, Docker). On the side, I've built an AI-powered
+      document Q&A platform using RAG architecture (Ollama + ChromaDB + FastAPI),
+      a real-time collaborative workspace with WebSockets, and a distributed
+      infrastructure monitoring system with Kafka. I've solved 500+ DSA problems
+      and hold a 6-star HackerRank rating in Problem Solving. I care about writing
+      clean, well-tested code that actually ships.`,
     },
     experience: {
       p: "What I have done so far",
@@ -84,11 +89,9 @@ export const config: TConfig = {
     works: {
       p: "My work",
       h2: "Projects.",
-      content: `Following projects showcases my skills and experience through
-    real-world examples of my work. Each project is briefly described with
-    links to code repositories and live demos in it. It reflects my
-    ability to solve complex problems, work with different technologies,
-    and manage projects effectively.`,
+      content: `Each project below is a complete full-stack application with its own
+    GitHub repo, README with system design diagrams, and production-grade architecture.
+    Click the GitHub icon on any card to explore the source code.`,
     },
   },
 };

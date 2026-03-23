@@ -22,12 +22,14 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
       <Tilt
         glareEnable
         tiltEnable
-        tiltMaxAngleX={30}
-        tiltMaxAngleY={30}
-        glareColor="#aaa6c3"
+        tiltMaxAngleX={20}
+        tiltMaxAngleY={20}
+        glareColor="#915EFF"
+        glareMaxOpacity={0.15}
+        perspective={800}
       >
-        <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[300px]">
-          <div className="relative h-[230px] w-full">
+        <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[340px] transition-all duration-300 hover:shadow-glow" style={{ transformStyle: "preserve-3d" }}>
+          <div className="relative h-[230px] w-full" style={{ transform: "translateZ(20px)" }}>
             <img
               src={image}
               alt={name}
@@ -46,11 +48,11 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
               </div>
             </div>
           </div>
-          <div className="mt-5">
+          <div className="mt-5" style={{ transform: "translateZ(15px)" }}>
             <h3 className="text-[24px] font-bold text-white">{name}</h3>
             <p className="text-secondary mt-2 text-[14px]">{description}</p>
           </div>
-          <div className="mt-4 flex flex-wrap gap-2">
+          <div className="mt-4 flex flex-wrap gap-2" style={{ transform: "translateZ(10px)" }}>
             {tags.map((tag) => (
               <p key={tag.name} className={`text-[14px] ${tag.color}`}>
                 #{tag.name}

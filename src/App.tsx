@@ -4,12 +4,13 @@ import {
   About,
   Contact,
   Experience,
-  Feedbacks,
   Hero,
   Navbar,
   Tech,
   Works,
+  Achievements,
   StarsCanvas,
+  Footer,
 } from "./components";
 import { useEffect } from "react";
 import { config } from "./constants/config";
@@ -29,14 +30,21 @@ const App = () => {
           <Hero />
         </div>
         <About />
-        <Experience />
+        <div className="relative">
+          <div className="css-particles" />
+          <Experience />
+        </div>
         <Tech />
-        <Works />
-        <Feedbacks />
+        <div className="relative">
+          <div className="css-particles css-particles-purple" />
+          <Works />
+        </div>
+        <Achievements />
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

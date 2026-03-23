@@ -41,9 +41,10 @@ const Contact = () => {
         emailjsConfig.serviceId,
         emailjsConfig.templateId,
         {
-          form_name: form.name,
+          from_name: form.name,
           to_name: config.html.fullName,
           from_email: form.email,
+          reply_to: form.email,
           to_email: config.html.email,
           message: form.message,
         },
@@ -103,7 +104,7 @@ const Contact = () => {
           })}
           <button
             type="submit"
-            className="bg-tertiary shadow-primary w-fit rounded-xl px-8 py-3 font-bold text-white shadow-md outline-none"
+            className="bg-[#915EFF] shadow-primary w-fit rounded-xl px-8 py-3 font-bold text-white shadow-md outline-none transition-all duration-300 hover:bg-[#7a4de0] hover:shadow-glow"
           >
             {loading ? "Sending..." : "Send"}
           </button>

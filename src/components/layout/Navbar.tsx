@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { styles } from "../../constants/styles";
 import { navLinks } from "../../constants";
 import { logo, menu, close } from "../../assets";
-import { config } from "../../constants/config";
 
 const Navbar = () => {
   const [active, setActive] = useState<string | null>();
@@ -52,8 +51,8 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } fixed top-0 z-20 flex w-full items-center py-5 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      } fixed top-0 z-20 flex w-full items-center py-5 transition-all duration-300 ${
+        scrolled ? "nav-glass" : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
@@ -66,21 +65,41 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="h-9 w-9 object-contain" />
           <p className="flex cursor-pointer text-[18px] font-bold text-white ">
-            {config.html.title}
+            Amna <span className="text-[#915EFF] ml-1">Khan</span>
           </p>
         </Link>
 
-        <ul className="hidden list-none flex-row gap-10 sm:flex">
+        <ul className="hidden list-none flex-row items-center gap-10 sm:flex">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
                 active === nav.id ? "text-white" : "text-secondary"
-              } cursor-pointer text-[18px] font-medium hover:text-white`}
+              } cursor-pointer text-[18px] font-medium transition-colors duration-300 hover:text-white`}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
+          <li>
+            <a
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer rounded-full border border-[#915EFF] px-5 py-2 text-[14px] font-semibold text-white transition-all duration-300 hover:bg-[#915EFF]/10"
+            >
+              Resume ↓
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/AmnaKhan1323"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cursor-pointer rounded-full bg-[#915EFF] px-5 py-2 text-[14px] font-semibold text-white transition-all duration-300 hover:bg-[#7a4de0] hover:shadow-lg hover:shadow-[#915EFF]/20"
+            >
+              GitHub ↗
+            </a>
+          </li>
         </ul>
 
         <div className="flex flex-1 items-center justify-end sm:hidden">
@@ -110,6 +129,26 @@ const Navbar = () => {
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="/resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-poppins cursor-pointer text-[16px] font-medium text-white"
+                >
+                  Resume ↓
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/AmnaKhan1323"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-poppins cursor-pointer text-[16px] font-medium text-[#915EFF]"
+                >
+                  GitHub ↗
+                </a>
+              </li>
             </ul>
           </div>
         </div>

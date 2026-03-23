@@ -13,7 +13,9 @@ import Experience from "./sections/Experience";
 import Works from "./sections/Works";
 import Feedbacks from "./sections/Feedbacks";
 import Contact from "./sections/Contact";
+import Achievements from "./sections/Achievements";
 import CanvasLoader from "./layout/Loader";
+import Footer from "./layout/Footer";
 
 export {
   Hero,
@@ -24,9 +26,11 @@ export {
   Works,
   Feedbacks,
   Contact,
+  Achievements,
   CanvasLoader,
   EarthCanvas,
   BallCanvas,
   ComputersCanvas,
   StarsCanvas,
+  Footer,
 };
