@@ -8,7 +8,7 @@ const stats = [
   { value: "500+", label: "DSA Problems Solved", icon: "🧠", link: "https://github.com/AmnaKhan1323" },
   { value: "99.9%", label: "System Uptime Achieved", icon: "⚡", link: "https://www.ncratleos.com" },
   { value: "80%", label: "Effort Reduction via Automation", icon: "🚀", link: "https://linkedin.com/in/amna-khan-38843b204" },
-  { value: "6★", label: "HackerRank Problem Solving", icon: "🏆", link: "https://www.hackerrank.com/profile/AmnaKhan1323" },
+  { value: "6★", label: "HackerRank Problem Solving", icon: "🏆", link: "https://www.hackerrank.com/profile/2001640100041_CS" },
 ];
 
 const achievements = [
@@ -16,7 +16,7 @@ const achievements = [
     title: "6★ Problem Solving on HackerRank",
     description: "Achieved 6-star rating in Problem Solving and 5-star in C++ Programming.",
     icon: "🏅",
-    link: "https://www.hackerrank.com/profile/AmnaKhan1323",
+    link: "https://www.hackerrank.com/profile/2001640100041_CS",
   },
   {
     title: "500+ DSA Problems",
