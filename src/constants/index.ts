@@ -146,7 +146,7 @@ const experiences: TExperience[] = [
       "Built Finance Reconciliation Dashboard connecting 5+ Oracle databases — multi-system reconciliation (Titan↔ERP, EBS↔Fusion Cloud, Zuora↔ERP), Oracle BI Publisher SOAP/XML integration, automated batch retrigger via SSH, and SOX-compliant SAR reports with ServiceNow integration.",
       "Developed real-time dashboards with Chart.js, Socket.IO, Redux Toolkit & WebSockets — live invoice status, mismatch audit reports, BU-wise analytics, Critical Jobs Monitoring, and AI confidence tier analysis.",
       "Implemented Microsoft Entra ID (Azure AD) SSO with OAuth2/Passport.js; multi-agent AI validation pipeline with Azure OpenAI producing tiered accuracy metrics.",
-      "Automated File Transfer System (FTS) reducing data latency by 60%; maintained Oracle R12 enterprise apps on OCI with 99.9% uptime; created ERP Wiki for 5 enterprise modules; managed deployment via PM2 with cron-based orchestration.",
+      "Automated File Transfer System (FTS) reducing data latency by 60%; maintained Oracle R12 enterprise apps on OCI with 99.9% uptime; managed deployment via PM2 with cron-based orchestration.",
     ],
   },
 ];
