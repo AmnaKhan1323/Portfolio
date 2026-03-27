@@ -19,7 +19,6 @@ import {
   tailwind,
   nodejs,
   python,
-  mongodb,
   postgresql,
   git,
   docker,
@@ -102,10 +101,6 @@ const technologies: TTechnology[] = [
   {
     name: "PostgreSQL",
     icon: postgresql,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
   },
   {
     name: "AWS",
