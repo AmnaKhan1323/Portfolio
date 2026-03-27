@@ -73,8 +73,8 @@ export const config: TConfig = {
       OpenAI (GPT-4.1-mini), and Oracle Fusion Cloud APIs to automate invoice processing
       across 6+ countries — and a Finance Reconciliation Dashboard connecting 5+ Oracle
       databases for cross-system batch reconciliation with Oracle BI Publisher SOAP
-      integration and SOX-compliant reporting. I also built Titan Dashboard, automated
-      file transfer systems, and ERP tooling. Day-to-day I work with React, Next.js,
+      integration and SOX-compliant reporting. I also built automated file transfer
+      systems and ERP tooling. Day-to-day I work with React, Next.js,
       Node.js, TypeScript, Oracle DB, and cloud infrastructure (Azure, OCI, AWS, Docker).
       On the side, I've built an AI-powered document Q&A platform (RAG architecture),
       a real-time collaborative workspace with WebSockets, and a distributed

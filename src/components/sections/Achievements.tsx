@@ -27,7 +27,7 @@ const achievements = [
   },
   {
     title: "Shipped Production Systems at Scale",
-    description: "Built Titan Dashboard & File Transfer System at NCR Atleos — live in production, used by finance teams across global operations.",
+    description: "Built AIS, Reconciliation Dashboard & File Transfer System at NCR Atleos — live in production, used by finance teams across global operations.",
     icon: "🏭",
     link: "https://www.ncratleos.com",
   },
