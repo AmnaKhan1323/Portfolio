@@ -68,15 +68,17 @@ export const config: TConfig = {
       p: "Introduction",
       h2: "Overview.",
       content: `I'm a Full Stack Engineer with ~2 years at NCR Atleos, where I
-      build and maintain enterprise apps for global financial operations — things
-      like real-time dashboards, automated file transfer systems, and ERP tooling.
-      Day-to-day I work with React, Next.js, Node.js, TypeScript, Python, and
-      cloud infrastructure (OCI, AWS, Docker). On the side, I've built an AI-powered
-      document Q&A platform using RAG architecture (Ollama + ChromaDB + FastAPI),
-      a real-time collaborative workspace with WebSockets, and a distributed
-      infrastructure monitoring system with Kafka. I've solved 500+ DSA problems
-      and hold a 6-star HackerRank rating in Problem Solving. I care about writing
-      clean, well-tested code that actually ships.`,
+      build enterprise apps for global financial operations. My biggest project is
+      AIS — an Automated Invoice System that uses Azure AI Document Intelligence,
+      Azure OpenAI (GPT-4.1-mini), and Oracle Fusion Cloud REST APIs to automate
+      end-to-end invoice processing across 6+ countries. I also built Titan Dashboard,
+      automated file transfer systems, and ERP tooling. Day-to-day I work with React,
+      Next.js, Node.js, TypeScript, Python, Oracle DB, and cloud infrastructure
+      (Azure, OCI, AWS, Docker). On the side, I've built an AI-powered document Q&A
+      platform (RAG architecture), a real-time collaborative workspace with WebSockets,
+      and a distributed infrastructure monitoring system with Kafka. I've solved 500+
+      DSA problems and hold a 6-star HackerRank rating. I care about writing clean,
+      well-tested code that actually ships.`,
     },
     experience: {
       p: "What I have done so far",

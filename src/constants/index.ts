@@ -142,12 +142,11 @@ const experiences: TExperience[] = [
     iconBg: "#FFFFFF",
     date: "Sep 2024 - Present",
     points: [
-      "Engineered and optimized Titan Dashboard & ERP Wiki, improving system performance by 40%.",
-      "Developed and maintained Oracle R12 apps on OCI & On-Prem, ensuring 99.9% uptime.",
-      "Led IAM integration for Titan and Trident, automating access control & security protocols.",
-      "Automated File Transfer System (FTS), enhancing data processing speed by 60%.",
-      "Managed dynamic database configurations for BOC applications, reducing deployment issues by 35%.",
-      "Spearheaded RevPro financial testing, ensuring 100% compliance with revenue standards.",
+      "Developed AIS (Automated Invoice System), an enterprise AP automation platform using Next.js, Node.js/TypeScript, Oracle DB, Azure AI Document Intelligence, Azure OpenAI (GPT-4.1-mini), and Oracle Fusion Cloud REST APIs — automating end-to-end invoice processing across 6+ countries.",
+      "Built multi-agent AI validation pipeline with Azure OpenAI for invoice OCR extraction, supplier matching (Fuse.js), PO resolution, and automated posting to Oracle Fusion Cloud ERP.",
+      "Developed real-time dashboards with Chart.js, Socket.IO & WebSockets — live invoice status, mismatch audit reports, BU-wise analytics, and AI confidence tier analysis.",
+      "Implemented Microsoft Entra ID (Azure AD) SSO authentication with OAuth2/Passport.js for secure enterprise access.",
+      "Architected Titan Dashboard & ERP Wiki serving finance teams across 35+ countries; automated FTS reducing data latency by 60%; maintained Oracle R12 apps on OCI with 99.9% uptime.",
     ],
   },
 ];
