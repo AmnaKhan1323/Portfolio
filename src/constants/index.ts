@@ -132,7 +132,7 @@ const experiences: TExperience[] = [
       "Built real-time finance monitoring dashboards, reducing manual batch tracking effort by 80%.",
       "Designed real-time monitoring dashboard, improving batch movement visibility by 50%.",
       "Implemented data validation & approval processes, ensuring 99.5% accuracy.",
-      "Created ERP Wiki, consolidating Cloud, Treasury, Legacy Apps, Planning & Forecasting.",
+      "Built ERP Wiki — full-stack internal knowledge platform (Next.js, Node.js/Express, Oracle DB) with CRUD interfaces for 18+ enterprise modules, Azure AD SSO via MSAL, and an integrated AI Agent (Azure OpenAI GPT-4.1) for natural language queries against Oracle ERP tables with CSV report generation.",
     ],
   },
   {

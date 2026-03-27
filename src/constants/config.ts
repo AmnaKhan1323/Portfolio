@@ -74,7 +74,8 @@ export const config: TConfig = {
       across 6+ countries — and a Finance Reconciliation Dashboard connecting 5+ Oracle
       databases for cross-system batch reconciliation with Oracle BI Publisher SOAP
       integration and SOX-compliant reporting. I also built automated file transfer
-      systems and ERP tooling. Day-to-day I work with React, Next.js,
+      systems, and ERP Wiki — an internal knowledge platform covering 18+ enterprise
+      modules with an AI Agent for natural language ERP querying. Day-to-day I work with React, Next.js,
       Node.js, TypeScript, Oracle DB, and cloud infrastructure (Azure, OCI, AWS, Docker).
       On the side, I've built an AI-powered document Q&A platform (RAG architecture),
       a real-time collaborative workspace with WebSockets, and a distributed
