@@ -23,6 +23,7 @@ import {
   git,
   docker,
   aws,
+  redux,
   ncratleos,
   pathfinding,
   wemeet,
@@ -52,11 +53,11 @@ export const navLinks: TNavLink[] = [
 
 const services: TService[] = [
   {
-    title: "Full Stack Developer",
+    title: "Full Stack Engineer",
     icon: web,
   },
   {
-    title: "Frontend Engineer",
+    title: "AI & LLM Integration",
     icon: mobile,
   },
   {
@@ -64,7 +65,7 @@ const services: TService[] = [
     icon: backend,
   },
   {
-    title: "Cloud & DevOps",
+    title: "Cloud & Enterprise Systems",
     icon: creator,
   },
 ];
@@ -109,6 +110,10 @@ const technologies: TTechnology[] = [
   {
     name: "Docker",
     icon: docker,
+  },
+  {
+    name: "Redux Toolkit",
+    icon: redux,
   },
   {
     name: "Git",

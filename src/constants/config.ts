@@ -46,7 +46,7 @@ export const config: TConfig = {
   },
   hero: {
     name: "Amna Khan",
-    p: ["Full Stack Engineer | React · Node · Cloud · AI", "Building distributed systems & AI-powered platforms"],
+    p: ["Full Stack Software Engineer | AI & Enterprise Systems", "Building AI-powered platforms & enterprise automation"],
   },
   contact: {
     p: "Get in touch",
