@@ -33,7 +33,7 @@ type TConfig = {
   sections: {
     about: Required<TSection>;
     experience: TSection;
-    feedbacks: TSection;
+    feedbacks?: TSection;
     works: Required<TSection>;
   };
 };
@@ -87,10 +87,7 @@ export const config: TConfig = {
       p: "What I have done so far",
       h2: "Work Experience.",
     },
-    feedbacks: {
-      p: "What others say",
-      h2: "Testimonials.",
-    },
+    // feedbacks section removed — not rendered in app
     works: {
       p: "My work",
       h2: "Projects.",

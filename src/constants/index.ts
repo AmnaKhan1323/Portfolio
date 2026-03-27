@@ -129,10 +129,9 @@ const experiences: TExperience[] = [
     iconBg: "#FFFFFF",
     date: "Feb 2024 - Sep 2024",
     points: [
-      "Built real-time finance monitoring dashboards, reducing manual batch tracking effort by 80%.",
-      "Designed real-time monitoring dashboard, improving batch movement visibility by 50%.",
-      "Implemented data validation & approval processes, ensuring 99.5% accuracy.",
-      "Built ERP Wiki — full-stack internal knowledge platform (Next.js, Node.js/Express, Oracle DB) with CRUD interfaces for 18+ enterprise modules, Azure AD SSO via MSAL, and an integrated AI Agent (Azure OpenAI GPT-4.1) for natural language queries against Oracle ERP tables with CSV report generation.",
+      "Owned end-to-end development of finance batch monitoring dashboards (React, Node.js, PostgreSQL) as sole frontend developer, introducing WebSocket live updates that eliminated manual refresh cycles across 3 business units.",
+      "Designed multi-level approval workflows with role-based access and audit logging, achieving 99.5% data accuracy across 10K+ monthly financial records.",
+      "Built ERP Wiki — full-stack knowledge platform (Next.js, Node.js/Express, Oracle DB) serving 18+ enterprise modules with CRUD interfaces, Azure AD SSO (MSAL), and an AI Agent (Azure OpenAI GPT-4.1) for natural language ERP querying.",
     ],
   },
   {
@@ -146,18 +145,16 @@ const experiences: TExperience[] = [
       "Built Finance Reconciliation Dashboard connecting 5+ Oracle databases — multi-system reconciliation (Titan↔ERP, EBS↔Fusion Cloud, Zuora↔ERP), Oracle BI Publisher SOAP/XML integration, automated batch retrigger via SSH, and SOX-compliant SAR reports with ServiceNow integration.",
       "Developed real-time dashboards with Chart.js, Socket.IO, Redux Toolkit & WebSockets — live invoice status, mismatch audit reports, BU-wise analytics, Critical Jobs Monitoring, and AI confidence tier analysis.",
       "Implemented Microsoft Entra ID (Azure AD) SSO with OAuth2/Passport.js; multi-agent AI validation pipeline with Azure OpenAI producing tiered accuracy metrics.",
-      "Automated File Transfer System (FTS) reducing data latency by 60%; maintained Oracle R12 enterprise apps on OCI with 99.9% uptime; managed deployment via PM2 with cron-based orchestration.",
+      "Automated File Transfer System (FTS) reducing data latency by 60%; maintained Oracle R12 enterprise apps on OCI with 99.9% uptime; wrote integration tests (Jest/Supertest) and API contract tests with Postman collections for CI validation.",
     ],
   },
 ];
-
-const testimonials: TTestimonial[] = [];
 
 const projects: TProject[] = [
   {
     name: "NexusAI — Document Intelligence",
     description:
-      "Full-stack AI platform with RAG architecture enabling natural language Q&A over enterprise documents. Built with Next.js frontend, Python/FastAPI backend, Ollama (Llama 3) for local LLM generation, ChromaDB for vector search, and PostgreSQL for metadata. Features document chunking pipeline, citation tracking, and 94% answer accuracy across 1,200+ document chunks. 100% free — no paid APIs.",
+      "Full-stack AI platform with RAG architecture enabling natural language Q&A over enterprise documents. Built with Next.js frontend, Python/FastAPI backend, Ollama (Llama 3) for local LLM generation, ChromaDB for vector search, and PostgreSQL for metadata. Features document chunking pipeline, citation tracking, and benchmarked at 94% answer relevance across 1,200+ chunks. Fully self-hosted — zero API costs.",
     tags: [
       {
         name: "next.js",
@@ -178,7 +175,7 @@ const projects: TProject[] = [
   {
     name: "SyncBoard — Collaborative Workspace",
     description:
-      "Real-time collaborative project management SaaS with live cursors, Kanban boards, and team chat. Architected with Next.js 14, TypeScript, NextAuth (OAuth + JWT), Prisma ORM with PostgreSQL, Redis for pub/sub, and WebSocket server handling 50+ concurrent connections with <100ms sync latency. Deployed on AWS with CI/CD pipeline.",
+      "Real-time collaborative project management SaaS with live cursors, Kanban boards, and team chat. Architected with Next.js 14, TypeScript, NextAuth (OAuth + JWT), Prisma ORM with PostgreSQL, Redis for pub/sub, and WebSocket server. Load-tested to 50+ concurrent connections at <100ms sync latency.",
     tags: [
       {
         name: "next.js-typescript",
@@ -199,7 +196,7 @@ const projects: TProject[] = [
   {
     name: "Sentinel — Infrastructure Monitor",
     description:
-      "Distributed cloud infrastructure monitoring platform tracking 26 microservices with real-time health checks, latency percentile dashboards (p50/p95/p99), and intelligent anomaly detection. Built with Node.js ingestion layer, Kafka for event streaming, TimescaleDB for time-series data, and Next.js dashboard. Processes 12.4k req/s with automated alerting via WebSocket.",
+      "Distributed infrastructure monitoring platform tracking 26 simulated microservices with real-time health checks, latency percentile dashboards (p50/p95/p99), and anomaly detection. Built with Node.js ingestion layer, Kafka for event streaming, TimescaleDB for time-series data, and Next.js dashboard. Benchmarked at 12.4k msg/s throughput with automated alerting via WebSocket.",
     tags: [
       {
         name: "node.js-kafka",
@@ -260,5 +257,8 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/AmnaKhan1323/WeMeet",
   },
 ];
+
+// Testimonials section intentionally left empty — not rendered in app
+const testimonials: TTestimonial[] = [];
 
 export { services, technologies, experiences, testimonials, projects };

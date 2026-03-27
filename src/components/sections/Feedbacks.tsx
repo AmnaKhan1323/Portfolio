@@ -45,12 +45,15 @@ const FeedbackCard: React.FC<{ index: number } & TTestimonial> = ({
 );
 
 const Feedbacks = () => {
+  const feedbacks = config.sections.feedbacks;
+  if (!feedbacks) return null;
+
   return (
     <div className="bg-black-100 mt-12 rounded-[20px]">
       <div
         className={`${styles.padding} bg-tertiary min-h-[300px] rounded-2xl`}
       >
-        <Header useMotion={true} {...config.sections.feedbacks} />
+        <Header useMotion={true} {...feedbacks} />
       </div>
       <div
         className={`${styles.paddingX} -mt-20 flex flex-wrap gap-7 pb-14 max-sm:justify-center`}
