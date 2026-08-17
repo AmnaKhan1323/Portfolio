@@ -82,7 +82,7 @@ const Navbar = () => {
           ))}
           <li>
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/14sVRvaANmYIOSxOwj7GXlyNPXw6td10u/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
               className="cursor-pointer rounded-full border border-[#915EFF] px-5 py-2 text-[14px] font-semibold text-white transition-all duration-300 hover:bg-[#915EFF]/10"
@@ -131,7 +131,7 @@ const Navbar = () => {
               ))}
               <li>
                 <a
-                  href="/resume.pdf"
+                  href="https://drive.google.com/file/d/14sVRvaANmYIOSxOwj7GXlyNPXw6td10u/view?usp=drivesdk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-poppins cursor-pointer text-[16px] font-medium text-white"

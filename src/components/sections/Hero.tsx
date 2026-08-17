@@ -33,7 +33,7 @@ const Hero = () => {
               Hire Me
             </a>
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/14sVRvaANmYIOSxOwj7GXlyNPXw6td10u/view?usp=drivesdk"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-full border-2 border-[#915EFF] px-8 py-3 text-[16px] font-bold text-white transition-all duration-300 hover:bg-[#915EFF]/10"
