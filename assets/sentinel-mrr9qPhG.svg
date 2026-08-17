@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#030712"/>
+      <stop offset="50%" style="stop-color:#111827"/>
+      <stop offset="100%" style="stop-color:#030712"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4"/>
+      <stop offset="100%" style="stop-color:#22d3ee"/>
+    </linearGradient>
+    <linearGradient id="red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="100%" style="stop-color:#f87171"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#4ade80"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f97316"/>
+      <stop offset="100%" style="stop-color:#fb923c"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="shadow"><feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/></filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bg)" rx="12"/>
+
+  <!-- Top Bar -->
+  <rect x="0" y="0" width="800" height="48" fill="#111827" rx="12"/>
+  <rect x="0" y="20" width="800" height="28" fill="#111827"/>
+
+  <!-- Logo -->
+  <rect x="16" y="10" width="32" height="28" rx="6" fill="url(#cyan)"/>
+  <text x="23" y="30" font-family="Arial, sans-serif" font-weight="800" font-size="18" fill="#030712">S</text>
+  <text x="56" y="30" font-family="Arial, sans-serif" font-weight="700" font-size="15" fill="white">Sentinel</text>
+  <text x="130" y="30" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Cloud Infrastructure Monitor</text>
+
+  <!-- Time range -->
+  <rect x="540" y="12" width="60" height="24" rx="6" fill="#1f2937" stroke="#374151" stroke-width="0.5"/>
+  <text x="556" y="28" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">1H</text>
+  <rect x="604" y="12" width="60" height="24" rx="6" fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="1"/>
+  <text x="618" y="28" font-family="Arial, sans-serif" font-size="11" fill="#22d3ee">24H</text>
+  <rect x="668" y="12" width="60" height="24" rx="6" fill="#1f2937" stroke="#374151" stroke-width="0.5"/>
+  <text x="685" y="28" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">7D</text>
+  <rect x="732" y="12" width="52" height="24" rx="6" fill="#1f2937" stroke="#374151" stroke-width="0.5"/>
+  <text x="745" y="28" font-family="Arial, sans-serif" font-size="11" fill="#94a3b8">30D</text>
+
+  <!-- Status Bar -->
+  <rect x="16" y="58" width="180" height="68" rx="10" fill="#0f1729" filter="url(#shadow)"/>
+  <text x="30" y="80" font-family="Arial, sans-serif" font-size="11" fill="#64748b">SERVICES</text>
+  <text x="30" y="106" font-family="Arial, sans-serif" font-weight="800" font-size="28" fill="#22c55e">24</text>
+  <text x="68" y="106" font-family="Arial, sans-serif" font-size="12" fill="#64748b">/ 26</text>
+  <text x="104" y="106" font-family="Arial, sans-serif" font-size="11" fill="#22c55e">● Healthy</text>
+
+  <rect x="206" y="58" width="180" height="68" rx="10" fill="#0f1729" filter="url(#shadow)"/>
+  <text x="220" y="80" font-family="Arial, sans-serif" font-size="11" fill="#64748b">AVG RESPONSE</text>
+  <text x="220" y="106" font-family="Arial, sans-serif" font-weight="800" font-size="28" fill="#22d3ee">142</text>
+  <text x="270" y="106" font-family="Arial, sans-serif" font-size="12" fill="#64748b">ms</text>
+  <text x="294" y="106" font-family="Arial, sans-serif" font-size="11" fill="#22c55e">↓ 12%</text>
+
+  <rect x="396" y="58" width="180" height="68" rx="10" fill="#0f1729" filter="url(#shadow)"/>
+  <text x="410" y="80" font-family="Arial, sans-serif" font-size="11" fill="#64748b">ERROR RATE</text>
+  <text x="410" y="106" font-family="Arial, sans-serif" font-weight="800" font-size="28" fill="#f97316">0.03</text>
+  <text x="466" y="106" font-family="Arial, sans-serif" font-size="12" fill="#64748b">%</text>
+  <text x="490" y="106" font-family="Arial, sans-serif" font-size="11" fill="#22c55e">↓ 8%</text>
+
+  <rect x="586" y="58" width="196" height="68" rx="10" fill="#0f1729" filter="url(#shadow)"/>
+  <text x="600" y="80" font-family="Arial, sans-serif" font-size="11" fill="#64748b">THROUGHPUT</text>
+  <text x="600" y="106" font-family="Arial, sans-serif" font-weight="800" font-size="28" fill="#a78bfa">12.4k</text>
+  <text x="670" y="106" font-family="Arial, sans-serif" font-size="12" fill="#64748b">req/s</text>
+  <text x="720" y="106" font-family="Arial, sans-serif" font-size="11" fill="#22c55e">↑ 18%</text>
+
+  <!-- Main Chart Area -->
+  <rect x="16" y="140" width="490" height="220" rx="10" fill="#0f1729" filter="url(#shadow)"/>
+  <text x="30" y="164" font-family="Arial, sans-serif" font-weight="600" font-size="13" fill="white">📊 Request Latency (p50 / p95 / p99)</text>
+
+  <!-- Chart grid lines -->
+  <line x1="50" y1="185" x2="490" y2="185" stroke="#1f2937" stroke-width="0.5"/>
+  <line x1="50" y1="215" x2="490" y2="215" stroke="#1f2937" stroke-width="0.5"/>
+  <line x1="50" y1="245" x2="490" y2="245" stroke="#1f2937" stroke-width="0.5"/>
+  <line x1="50" y1="275" x2="490" y2="275" stroke="#1f2937" stroke-width="0.5"/>
+  <line x1="50" y1="305" x2="490" y2="305" stroke="#1f2937" stroke-width="0.5"/>
+  <line x1="50" y1="335" x2="490" y2="335" stroke="#1f2937" stroke-width="0.5"/>
+
+  <!-- Y-axis labels -->
+  <text x="30" y="190" font-family="Arial, sans-serif" font-size="9" fill="#475569">500</text>
+  <text x="30" y="220" font-family="Arial, sans-serif" font-size="9" fill="#475569">400</text>
+  <text x="30" y="250" font-family="Arial, sans-serif" font-size="9" fill="#475569">300</text>
+  <text x="30" y="280" font-family="Arial, sans-serif" font-size="9" fill="#475569">200</text>
+  <text x="30" y="310" font-family="Arial, sans-serif" font-size="9" fill="#475569">100</text>
+  <text x="30" y="340" font-family="Arial, sans-serif" font-size="9" fill="#475569">0ms</text>
+
+  <!-- p99 line (red-ish, higher) -->
+  <polyline points="60,260 100,255 140,250 180,265 220,248 260,295 300,270 340,252 380,258 420,245 460,250 490,242" fill="none" stroke="#f87171" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- p95 line (orange, middle) -->
+  <polyline points="60,290 100,285 140,282 180,295 220,278 260,315 300,295 340,280 380,288 420,275 460,280 490,272" fill="none" stroke="#fb923c" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- p50 line (cyan, lowest) -->
+  <polyline points="60,318 100,315 140,312 180,320 220,308 260,325 300,315 340,305 380,312 420,302 460,306 490,298" fill="none" stroke="#22d3ee" stroke-width="2"/>
+
+  <!-- Anomaly spike -->
+  <circle cx="260" cy="295" r="6" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+  <rect x="240" y="270" width="75" height="20" rx="4" fill="rgba(239,68,68,0.2)" stroke="#ef4444" stroke-width="0.5"/>
+  <text x="248" y="284" font-family="Arial, sans-serif" font-size="9" fill="#fca5a5">⚠ Spike 14:32</text>
+
+  <!-- Legend -->
+  <line x1="330" y1="165" x2="350" y2="165" stroke="#22d3ee" stroke-width="2"/>
+  <text x="354" y="169" font-family="Arial, sans-serif" font-size="10" fill="#22d3ee">p50</text>
+  <line x1="390" y1="165" x2="410" y2="165" stroke="#fb923c" stroke-width="2"/>
+  <text x="414" y="169" font-family="Arial, sans-serif" font-size="10" fill="#fb923c">p95</text>
+  <line x1="450" y1="165" x2="470" y2="165" stroke="#f87171" stroke-width="2"/>
+  <text x="474" y="169" font-family="Arial, sans-serif" font-size="10" fill="#f87171">p99</text>
+
+  <!-- Right Panel - Service Health -->
+  <rect x="520" y="140" width="264" height="220" rx="10" fill="#0f1729" filter="url(#shadow)"/>
+  <text x="534" y="164" font-family="Arial, sans-serif" font-weight="600" font-size="13" fill="white">🏥 Service Health</text>
+
+  <!-- Service rows -->
+  <rect x="534" y="178" width="236" height="32" rx="6" fill="rgba(34,197,94,0.05)"/>
+  <circle cx="548" cy="194" r="5" fill="#22c55e" filter="url(#glow)"/>
+  <text x="560" y="198" font-family="Arial, sans-serif" font-size="12" fill="#e2e8f0">api-gateway</text>
+  <text x="690" y="198" font-family="Arial, sans-serif" font-size="11" fill="#22c55e">99.99%</text>
+  <text x="740" y="198" font-family="Arial, sans-serif" font-size="10" fill="#64748b">42ms</text>
+
+  <rect x="534" y="214" width="236" height="32" rx="6" fill="rgba(34,197,94,0.05)"/>
+  <circle cx="548" cy="230" r="5" fill="#22c55e" filter="url(#glow)"/>
+  <text x="560" y="234" font-family="Arial, sans-serif" font-size="12" fill="#e2e8f0">auth-service</text>
+  <text x="690" y="234" font-family="Arial, sans-serif" font-size="11" fill="#22c55e">99.97%</text>
+  <text x="740" y="234" font-family="Arial, sans-serif" font-size="10" fill="#64748b">38ms</text>
+
+  <rect x="534" y="250" width="236" height="32" rx="6" fill="rgba(34,197,94,0.05)"/>
+  <circle cx="548" cy="266" r="5" fill="#22c55e" filter="url(#glow)"/>
+  <text x="560" y="270" font-family="Arial, sans-serif" font-size="12" fill="#e2e8f0">user-service</text>
+  <text x="690" y="270" font-family="Arial, sans-serif" font-size="11" fill="#22c55e">99.95%</text>
+  <text x="740" y="270" font-family="Arial, sans-serif" font-size="10" fill="#64748b">56ms</text>
+
+  <rect x="534" y="286" width="236" height="32" rx="6" fill="rgba(249,115,22,0.05)"/>
+  <circle cx="548" cy="302" r="5" fill="#f97316" filter="url(#glow)"/>
+  <text x="560" y="306" font-family="Arial, sans-serif" font-size="12" fill="#e2e8f0">payment-svc</text>
+  <text x="690" y="306" font-family="Arial, sans-serif" font-size="11" fill="#f97316">99.80%</text>
+  <text x="740" y="306" font-family="Arial, sans-serif" font-size="10" fill="#64748b">189ms</text>
+
+  <rect x="534" y="322" width="236" height="32" rx="6" fill="rgba(239,68,68,0.05)"/>
+  <circle cx="548" cy="338" r="5" fill="#ef4444" filter="url(#glow)"/>
+  <text x="560" y="342" font-family="Arial, sans-serif" font-size="12" fill="#e2e8f0">ml-pipeline</text>
+  <text x="690" y="342" font-family="Arial, sans-serif" font-size="11" fill="#ef4444">98.20%</text>
+  <text x="740" y="342" font-family="Arial, sans-serif" font-size="10" fill="#64748b">420ms</text>
+
+  <!-- Bottom Panel - Alerts & Logs -->
+  <rect x="16" y="374" width="320" height="112" rx="10" fill="#0f1729" filter="url(#shadow)"/>
+  <text x="30" y="398" font-family="Arial, sans-serif" font-weight="600" font-size="13" fill="white">🔔 Live Alerts</text>
+
+  <rect x="30" y="408" width="292" height="28" rx="6" fill="rgba(239,68,68,0.08)"/>
+  <text x="42" y="426" font-family="Arial, sans-serif" font-size="10" fill="#fca5a5">🔴 14:32 — ml-pipeline latency > 400ms threshold</text>
+
+  <rect x="30" y="440" width="292" height="28" rx="6" fill="rgba(249,115,22,0.08)"/>
+  <text x="42" y="458" font-family="Arial, sans-serif" font-size="10" fill="#fdba74">🟡 14:28 — payment-svc error rate ↑ 0.2%</text>
+
+  <!-- Bottom Right - Infrastructure -->
+  <rect x="350" y="374" width="434" height="112" rx="10" fill="#0f1729" filter="url(#shadow)"/>
+  <text x="364" y="398" font-family="Arial, sans-serif" font-weight="600" font-size="13" fill="white">🏗️ Infrastructure</text>
+
+  <!-- Infra nodes -->
+  <rect x="364" y="410" width="70" height="32" rx="6" fill="#1f2937" stroke="#06b6d4" stroke-width="0.8"/>
+  <text x="376" y="424" font-family="Arial, sans-serif" font-size="9" fill="#22d3ee">Node.js</text>
+  <text x="376" y="436" font-family="Arial, sans-serif" font-size="8" fill="#64748b">API Layer</text>
+
+  <text x="440" y="430" font-family="Arial, sans-serif" font-size="10" fill="#374151">→</text>
+
+  <rect x="454" y="410" width="70" height="32" rx="6" fill="#1f2937" stroke="#f97316" stroke-width="0.8"/>
+  <text x="470" y="424" font-family="Arial, sans-serif" font-size="9" fill="#fb923c">Kafka</text>
+  <text x="462" y="436" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Streaming</text>
+
+  <text x="530" y="430" font-family="Arial, sans-serif" font-size="10" fill="#374151">→</text>
+
+  <rect x="544" y="410" width="74" height="32" rx="6" fill="#1f2937" stroke="#a855f7" stroke-width="0.8"/>
+  <text x="548" y="424" font-family="Arial, sans-serif" font-size="9" fill="#c4b5fd">TimescaleDB</text>
+  <text x="556" y="436" font-family="Arial, sans-serif" font-size="8" fill="#64748b">TSDB</text>
+
+  <text x="624" y="430" font-family="Arial, sans-serif" font-size="10" fill="#374151">→</text>
+
+  <rect x="638" y="410" width="66" height="32" rx="6" fill="#1f2937" stroke="#22c55e" stroke-width="0.8"/>
+  <text x="652" y="424" font-family="Arial, sans-serif" font-size="9" fill="#4ade80">AWS</text>
+  <text x="648" y="436" font-family="Arial, sans-serif" font-size="8" fill="#64748b">ECS/EKS</text>
+
+  <rect x="714" y="410" width="56" height="32" rx="6" fill="#1f2937" stroke="#ef4444" stroke-width="0.8"/>
+  <text x="722" y="424" font-family="Arial, sans-serif" font-size="9" fill="#fca5a5">Docker</text>
+  <text x="718" y="436" font-family="Arial, sans-serif" font-size="8" fill="#64748b">Containers</text>
+
+  <!-- Tech pills bottom -->
+  <rect x="364" y="452" width="58" height="20" rx="10" fill="rgba(6,182,212,0.15)" stroke="#06b6d4" stroke-width="0.5"/>
+  <text x="372" y="466" font-family="Arial, sans-serif" font-size="9" fill="#22d3ee">Next.js</text>
+  <rect x="428" y="452" width="76" height="20" rx="10" fill="rgba(99,102,241,0.15)" stroke="#6366f1" stroke-width="0.5"/>
+  <text x="436" y="466" font-family="Arial, sans-serif" font-size="9" fill="#a5b4fc">TypeScript</text>
+  <rect x="510" y="452" width="70" height="20" rx="10" fill="rgba(168,85,247,0.15)" stroke="#a855f7" stroke-width="0.5"/>
+  <text x="518" y="466" font-family="Arial, sans-serif" font-size="9" fill="#c4b5fd">Grafana</text>
+  <rect x="586" y="452" width="78" height="20" rx="10" fill="rgba(249,115,22,0.15)" stroke="#f97316" stroke-width="0.5"/>
+  <text x="594" y="466" font-family="Arial, sans-serif" font-size="9" fill="#fb923c">Prometheus</text>
+  <rect x="670" y="452" width="80" height="20" rx="10" fill="rgba(34,197,94,0.15)" stroke="#22c55e" stroke-width="0.5"/>
+  <text x="678" y="466" font-family="Arial, sans-serif" font-size="9" fill="#4ade80">WebSocket</text>
+</svg>
