@@ -25,8 +25,6 @@ import {
   aws,
   redux,
   ncratleos,
-  pathfinding,
-  wemeet,
   nexusai,
   syncboard,
   sentinel,
@@ -129,9 +127,9 @@ const experiences: TExperience[] = [
     iconBg: "#FFFFFF",
     date: "Feb 2024 - Sep 2024",
     points: [
-      "Owned end-to-end development of finance batch monitoring dashboards (React, Node.js, PostgreSQL) as sole frontend developer, introducing WebSocket live updates that eliminated manual refresh cycles across 3 business units.",
-      "Designed multi-level approval workflows with role-based access and audit logging, achieving 99.5% data accuracy across 10K+ monthly financial records.",
-      "Built ERP Wiki — full-stack knowledge platform (Next.js, Node.js/Express, Oracle DB) serving 18+ enterprise modules with CRUD interfaces, Azure AD SSO (MSAL), and an AI Agent (Azure OpenAI GPT-4.1) for natural language ERP querying.",
+      "Owned frontend delivery for finance monitoring dashboards (React, JavaScript) as sole engineer, shipping reusable modules, responsive layouts, and real-time updates that eliminated 15+ hours/week across 3 business units.",
+      "Delivered a multi-step approval workflow UI with role-based views and REST API integration, sustaining 99.5% data accuracy across 10K+ monthly records.",
+      "Shipped ERP Wiki (Next.js 14 + React 18) covering 18+ modules with full-text search and CRUD flows, applying modern React patterns (hooks, context, suspense) and accessibility-first design.",
     ],
   },
   {
@@ -141,11 +139,10 @@ const experiences: TExperience[] = [
     iconBg: "#FFFFFF",
     date: "Sep 2024 - Present",
     points: [
-      "Developed AIS (Automated Invoice System) — enterprise AP automation using Next.js, Node.js/TypeScript, Oracle DB, Azure AI Document Intelligence, Azure OpenAI (GPT-4.1-mini), and Oracle Fusion Cloud REST APIs, automating invoice processing across 6+ countries.",
-      "Built Finance Reconciliation Dashboard connecting 5+ Oracle databases — multi-system reconciliation (Titan↔ERP, EBS↔Fusion Cloud, Zuora↔ERP), Oracle BI Publisher SOAP/XML integration, automated batch retrigger via SSH, and SOX-compliant SAR reports with ServiceNow integration.",
-      "Developed real-time dashboards with Chart.js, Socket.IO, Redux Toolkit & WebSockets — live invoice status, mismatch audit reports, BU-wise analytics, Critical Jobs Monitoring, and AI confidence tier analysis.",
-      "Implemented Microsoft Entra ID (Azure AD) SSO with OAuth2/Passport.js; multi-agent AI validation pipeline with Azure OpenAI producing tiered accuracy metrics.",
-      "Automated File Transfer System (FTS) reducing data latency by 60%; maintained Oracle R12 enterprise apps on OCI with 99.9% uptime; wrote integration tests (Jest/Supertest) and API contract tests with Postman collections for CI validation.",
+      "Spearheaded core interfaces for an Automated Invoice System (React, Next.js, TypeScript, Tailwind CSS), unblocking compliance and reporting workflows for production users across 6+ locales.",
+      "Built a Finance Reconciliation Dashboard with a reusable component library (data tables, filters, comparison views), cutting manual reconciliation effort and sustaining cross-browser support (Chrome, Firefox, Safari, Edge).",
+      "Optimized frontend performance via code splitting, lazy loading, and memoization, cutting bundle size by 40%, improving load speed by 50%, and sustaining 90+ Lighthouse scores in production.",
+      "Engineered real-time monitoring dashboards with React, WebSockets, and optimistic UI patterns; drove test coverage to 85%+ through automated tests and peer review, safeguarding release quality.",
     ],
   },
 ];
@@ -154,7 +151,7 @@ const projects: TProject[] = [
   {
     name: "NexusAI — Document Intelligence",
     description:
-      "Full-stack AI platform with RAG architecture enabling natural language Q&A over enterprise documents. Built with Next.js frontend, Python/FastAPI backend, Ollama (Llama 3) for local LLM generation, ChromaDB for vector search, and PostgreSQL for metadata. Features document chunking pipeline, citation tracking, and benchmarked at 94% answer relevance across 1,200+ chunks. Fully self-hosted — zero API costs.",
+      "Developed a document intelligence platform with Retrieval-Augmented Generation (RAG), enabling natural-language Q&A with citation-backed, hallucination-resistant responses over uploaded PDF/DOCX documents. Implemented chunking, embedding, and vector search pipelines (ChromaDB, Ollama) with asynchronous processing and scalable multi-session chat management.",
     tags: [
       {
         name: "next.js",
@@ -175,7 +172,7 @@ const projects: TProject[] = [
   {
     name: "SyncBoard — Collaborative Workspace",
     description:
-      "Real-time collaborative project management SaaS with live cursors, Kanban boards, and team chat. Architected with Next.js 14, TypeScript, NextAuth (OAuth + JWT), Prisma ORM with PostgreSQL, Redis for pub/sub, and WebSocket server. Load-tested to 50+ concurrent connections at <100ms sync latency.",
+      "Launched a collaborative workspace SaaS with Kanban boards, live cursors, and team chat, using room-based WebSocket architecture and optimistic UI for responsive multi-user interactions. Enabled secure auth (OAuth/JWT), role-based access control, and real-time synchronization via Redis pub/sub.",
     tags: [
       {
         name: "next.js-typescript",
@@ -196,7 +193,7 @@ const projects: TProject[] = [
   {
     name: "Sentinel — Infrastructure Monitor",
     description:
-      "Distributed infrastructure monitoring platform tracking 26 simulated microservices with real-time health checks, latency percentile dashboards (p50/p95/p99), and anomaly detection. Built with Node.js ingestion layer, Kafka for event streaming, TimescaleDB for time-series data, and Next.js dashboard. Benchmarked at 12.4k msg/s throughput with automated alerting via WebSocket.",
+      "Designed and built a distributed infrastructure monitoring platform covering 26 microservices, with real-time health checks, p50/p95/p99 latency dashboards, and automated anomaly detection. Architected an event-driven ingestion pipeline (Kafka, TimescaleDB) supporting high-throughput telemetry and sub-second WebSocket updates.",
     tags: [
       {
         name: "node.js-kafka",
@@ -213,48 +210,6 @@ const projects: TProject[] = [
     ],
     image: sentinel,
     sourceCodeLink: "https://github.com/AmnaKhan1323/sentinel",
-  },
-  {
-    name: "Pathfinding Visualizer",
-    description:
-      "Interactive algorithm visualization tool featuring Dijkstra's, A*, BFS, and DFS with real-time rendering. Engineered a responsive UI with dynamic grid manipulation, wall placement, and weighted nodes for optimal route planning.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "algorithms",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: pathfinding,
-    sourceCodeLink: "https://amnakhan1323.github.io/Pathfinding-Visualizer/",
-  },
-  {
-    name: "We Meet — Video Conferencing",
-    description:
-      "Real-time video conferencing platform with WebRTC-powered HD video/audio streams, intelligent bandwidth management, and sub-200ms latency. Integrated Agora RTC for communication and RTM API for instant messaging.",
-    tags: [
-      {
-        name: "javascript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "agora-webrtc",
-        color: "green-text-gradient",
-      },
-      {
-        name: "real-time",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: wemeet,
-    sourceCodeLink: "https://github.com/AmnaKhan1323/WeMeet",
   },
 ];
 

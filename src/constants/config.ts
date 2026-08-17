@@ -46,7 +46,7 @@ export const config: TConfig = {
   },
   hero: {
     name: "Amna Khan",
-    p: ["Full Stack Software Engineer | AI & Enterprise Systems", "Building AI-powered platforms & enterprise automation"],
+    p: ["Software Engineer", "Building scalable web systems & AI-powered platforms"],
   },
   contact: {
     p: "Get in touch",
@@ -67,20 +67,17 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a Full Stack Engineer with ~2 years at NCR Atleos, where I
-      build enterprise apps for global financial operations. My major projects include
-      AIS — an Automated Invoice System using Azure AI Document Intelligence, Azure
-      OpenAI (GPT-4.1-mini), and Oracle Fusion Cloud APIs to automate invoice processing
-      across 6+ countries — and a Finance Reconciliation Dashboard connecting 5+ Oracle
-      databases for cross-system batch reconciliation with Oracle BI Publisher SOAP
-      integration and SOX-compliant reporting. I also built automated file transfer
-      systems, and ERP Wiki — an internal knowledge platform covering 18+ enterprise
-      modules with an AI Agent for natural language ERP querying. Day-to-day I work with React, Next.js,
-      Node.js, TypeScript, Oracle DB, and cloud infrastructure (Azure, OCI, AWS, Docker).
-      On the side, I've built an AI-powered document Q&A platform (RAG architecture),
-      a real-time collaborative workspace with WebSockets, and a distributed
-      infrastructure monitoring system with Kafka. I've solved 500+ DSA problems
-      and hold a 6-star HackerRank rating. I care about writing clean, well-tested
+      content: `Software Engineer with 2+ years of experience shipping production web
+      systems serving 500+ users across 35+ countries at NCR Atleos. I deliver
+      high-performance React/Next.js/TypeScript applications (40% smaller bundles,
+      50% faster loads) and distributed, event-driven backend systems using Kafka,
+      Redis, and WebSockets. At NCR Atleos I've built an Automated Invoice System,
+      a Finance Reconciliation Dashboard, real-time monitoring dashboards, and an
+      internal ERP Wiki knowledge platform covering 18+ modules. On the side, I've
+      built Sentinel (a distributed infrastructure monitoring platform), NexusAI
+      (a Retrieval-Augmented Generation document Q&A platform), and SyncBoard (a
+      real-time collaborative workspace). I'm strong in data structures,
+      algorithms, and system design, and care about writing clean, well-tested
       code that actually ships.`,
     },
     experience: {
