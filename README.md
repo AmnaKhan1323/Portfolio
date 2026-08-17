@@ -19,7 +19,7 @@ My personal developer portfolio — a fully responsive, interactive 3D website b
 - 🎮 Interactive 3D computer model & Earth globe (Three.js + React Three Fiber)
 - 🌊 Glassmorphism navbar with scroll-aware transparency
 - 📊 Achievements section with stats grid and parallax tilt cards
-- 💼 5 project cards with GitHub links and live demos
+- 💼 3 project cards with GitHub links and live demos
 - 📧 Working contact form (EmailJS integration)
 - 📄 Resume download button
 - 🎯 Hover tooltips on tech stack icons
