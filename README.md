@@ -8,7 +8,7 @@
 
 ## 🌐 Live Demo
 
-> _Deploy URL will be added once hosted on Vercel._
+> **Live at: [amnakhan1323.github.io/Portfolio](https://amnakhan1323.github.io/Portfolio/)**
 
 ## 📝 Description
 
