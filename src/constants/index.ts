@@ -26,7 +26,7 @@ import {
   redux,
   ncratleos,
   nexusai,
-  syncboard,
+  coderise,
   sentinel,
 } from "../assets";
 
@@ -170,25 +170,25 @@ const projects: TProject[] = [
     sourceCodeLink: "https://github.com/AmnaKhan1323/nexusai",
   },
   {
-    name: "SyncBoard — Collaborative Workspace",
+    name: "CodeRise — Interview Prep Platform",
     description:
-      "Launched a collaborative workspace SaaS with Kanban boards, live cursors, and team chat, using room-based WebSocket architecture and optimistic UI for responsive multi-user interactions. Enabled secure auth (OAuth/JWT), role-based access control, and real-time synchronization via Redis pub/sub.",
+      "Architected a full-stack DSA interview-prep platform with 280+ curated problems across 4 languages, structured learning roadmaps, gamified progress tracking, and a full admin CMS. Built a sandboxed multi-language code execution engine (client-side JS/Python, Judge0-backed Java/C++), timed contests with live leaderboards, and an AI tutoring assistant - built solo, end-to-end.",
     tags: [
       {
         name: "next.js-typescript",
         color: "blue-text-gradient",
       },
       {
-        name: "websocket-redis",
+        name: "prisma-postgresql",
         color: "green-text-gradient",
       },
       {
-        name: "postgresql-prisma",
+        name: "openai-judge0",
         color: "pink-text-gradient",
       },
     ],
-    image: syncboard,
-    sourceCodeLink: "https://github.com/AmnaKhan1323/syncboard",
+    image: coderise,
+    sourceCodeLink: "https://coderise-ten-lake.vercel.app",
   },
   {
     name: "Sentinel — Infrastructure Monitor",

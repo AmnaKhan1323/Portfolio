@@ -38,7 +38,7 @@ import pathfinding from "./pathfinding.png";
 import simon from "./simon.png";
 import wemeet from "./wemeet.svg";
 import nexusai from "./nexusai.svg";
-import syncboard from "./syncboard.svg";
+import coderise from "./coderise.svg";
 import sentinel from "./sentinel.svg";
 
 export {
@@ -79,6 +79,6 @@ export {
   simon,
   wemeet,
   nexusai,
-  syncboard,
+  coderise,
   sentinel,
 };
