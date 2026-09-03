@@ -3917,8 +3917,9 @@ No matching component was found for:
       a Finance Reconciliation Dashboard, real-time monitoring dashboards, and an
       internal ERP Wiki knowledge platform covering 18+ modules. On the side, I've
       built Sentinel (a distributed infrastructure monitoring platform), NexusAI
-      (a Retrieval-Augmented Generation document Q&A platform), and SyncBoard (a
-      real-time collaborative workspace). I'm strong in data structures,
+      (a Retrieval-Augmented Generation document Q&A platform), and CodeRise (a
+      full-stack DSA interview-prep platform with live code execution, timed
+      contests, and an AI tutoring assistant). I'm strong in data structures,
       algorithms, and system design, and care about writing clean, well-tested
       code that actually ships.`},experience:{p:"What I have done so far",h2:"Work Experience."},works:{p:"My work",h2:"Projects.",content:`Each project below is a complete full-stack application with its own
     GitHub repo, README with system design diagrams, and production-grade architecture.
